@@ -1,0 +1,15 @@
+/* Defaults */
+body {
+    margin: 0px;
+    text-align: center;
+}
+
+/* Testing */
+.header_image {
+    height: 300px;
+    width: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    overflow: hidden;
+}

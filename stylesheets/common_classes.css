@@ -1,0 +1,193 @@
+﻿/* CSS Common Classes */
+
+/* Generic */
+.button {    
+    font-size: 1em;
+    font-weight: normal;
+    padding: 6px 15px;
+}
+
+.button:hover {
+    background: #ececec;
+}
+
+.header1 {
+    font-size: 2.25em;
+    font-weight: bold;
+    padding: 20px 0 15px 35px;
+    margin: 0;
+}
+
+.header2 {
+    border-bottom: solid;
+    border-bottom-color: #d0d0d0;
+    border-bottom-width: 1px;
+    color: #000080;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 0 4px 0 184px/* div.d_page_content.margin */;
+    text-align: center;
+}
+
+.header3 {
+    font-size: 1.25em;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+}
+
+.header4 {
+    color: #000080;
+    font-size: 1.1em;
+    padding: 3px;
+    margin: 0;
+    text-align: center;
+}
+
+/* a */
+a.a_button_block {
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+a.a_button_page_content {
+    /* from .button */
+    display: inline-block;
+    text-align: center;
+}
+
+a.a_button_side {
+    /* from .button */
+    display: block;
+}
+
+a.a_button_top {
+    /* from .button */
+    display: inline-block;
+    text-align: center;
+}
+
+a.a_page_header {
+	background: #ececec;
+    border-bottom: solid;
+    border-bottom-color: #d0d0d0;
+    border-bottom-width: 1px;
+    display: block;
+    padding: 0 0 9px 0;
+}
+
+/* div */
+div.d_address {
+    text-align: center;
+}
+
+div.d_buttons_page_content {
+    overflow: hidden;
+    padding: 4px;
+    text-align: center;
+}
+
+div.d_buttons_page_content_top {
+    border-bottom: solid;
+    border-bottom-color: #d0d0d0;
+    border-bottom-width: 1px;
+    overflow: hidden;
+    padding: 0 4px 4px 4px;
+    text-align: center;
+}
+
+div.d_buttons_side {
+    display: inline-block;
+    float: left;
+    padding: 0 4px;
+    width: 172px/* div.d_content.margin - padding.left - padding.right - 4 */;
+}
+
+div.d_buttons_top {
+    border-bottom: solid;
+    border-bottom-color: #d0d0d0;
+    border-bottom-width: 1px;
+    overflow: hidden;
+    padding: 4px;
+}
+
+div.d_container {
+    margin: 0 auto;
+    text-align: left;
+    max-width: 1200px;
+}
+
+div.d_error {
+    color: #5a0000;
+    text-align: center;
+}
+
+div.d_form_textbox_line {
+    margin: 0 0 4px 0;
+}
+
+div.d_hidden_data {
+    height: auto; 
+    position: absolute; 
+    white-space: nowrap;
+    width: auto;
+    visibility: hidden;
+}
+
+div.d_page_content {
+    margin: 4px 4px 25px 184px/* div.d_buttons.width + div.d_buttons.padding.left + div.d_buttons.padding.right + 4 */;
+}
+
+div.d_welcome {    
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+}
+
+/* form */
+form.f_page_content {
+    margin: 5px 0;
+    padding: 5px;    
+}
+
+/* hr */
+hr.hr_page_header_bar {
+    margin: 0 20px 0 15px;
+    border-color: #000080;
+    border-style: solid;
+    border-width: 6px;
+}
+
+/* input */
+input.i_button {
+    /* from .button */
+    background: none;
+    border: none;
+    display: inline-block;
+    outline: none;
+    text-align: center;   
+}
+
+/* label */
+label.lbl_form {
+    display: inline-block;
+    padding: 0 4px 0 0;
+    text-align: right;
+}
+
+label.lbl_form_textarea {
+    min-width: 22%;
+    vertical-align: top;
+}
+
+label.lbl_form_textbox {
+    width: 43%;
+}
+
+/* textarea */
+textarea.ta_form_textarea {
+    height: 100px;
+    resize: none;
+    width: 72%;
+}

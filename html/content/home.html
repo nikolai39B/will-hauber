@@ -1,0 +1,67 @@
+<!--
+Optional:
+    photos (array of photos, length <= 3)
+
+-->
+<div class="header3">Who We Are</div>
+<div>
+    The Boy Scouts of America was incorporated to provide a program for community organizations that offers effective character, citizenship, and personal fitness training for youth. Our troop is an active part
+    of this national organization and serves as a local platform for personal development.
+</div>
+<br />
+
+<!-- Photo 1 -->
+{% if photos|length() >= 1 and photos[0] != None %}
+    <img src="{{ photos[0] }}" />
+{% endif %}
+
+<div class="header3">What We Do</div>
+<div>
+    BSA strives to develop American citizens who:<br />
+    - are physically, mentally, and emotionally fit<br />
+    - have a high degree of self-reliance as evidenced by their initiative, courage, and resourcefulness<br />
+    - have the desire and skills to help others<br />
+    - understand the principles of the American social, economic, and governmental systems<br />
+    - are knowledgeable about their American heritage and understand our nation's role in the world<br />
+    - have a keen respect for the basic rights of all people<br />
+    - are prepared to participate in and give leadership to American society.<br />
+    <br />
+    Our troop actively promotes these characteristics in its members. We have weekly meetings, monthly outings, and extra events full of leadership and teamwork opportunities.
+</div>
+<br />
+
+<!-- Photo 2-->
+{% if photos|length() >= 2 and photos[1] != None %}
+
+{% endif %}
+
+<div class="header3">Our Mission</div>
+<div>
+    Our mission is to train young scouts to become active citizens, good leaders, and great men who live by the Scout Law.
+</div>
+<br />
+
+<div class="header3">Our Leadership</div>
+<div>
+    We are a first and foremost a youth lead troop. All activities are planned and executed by the scouts themselves during monthly junior leader meetings. Each scout has the opportunity to contribute to the
+    operations of the troop and help plan upcoming events. Adult participation in these meetings and in troop operations as a whole is primarily an advisory role.
+</div>
+<br />
+
+<!-- Photo 3 -->
+{% if photos|length() >= 3 and photos[2] != None %}
+
+{% endif %}
+
+<div class="header3">General Information</div>
+<div class="d_address">
+    Chillicothe District - Tecumseh Council<br />
+    St. Brigid Parish<br />
+    312 Fairground Rd.<br />
+    Xenia, OH 45385<br />
+</div>
+<br />
+
+<div>
+    Our meetings take place Sundays at St. Brigid Parish in the lunchroom from 6:30 to 8:00. We welcome anyone who is interested in joining!
+</div>
