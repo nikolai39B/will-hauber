@@ -1,18 +1,16 @@
 ﻿"""
 FILE:
-    home.py
+    notFound.py
  
 DIRECTORY:
     will-hauber/source/pages
 
 DESCRIPTION:
-    This file manages requests to '/' (the home page).
+    This file manages any requests that weren't mapped elsewhere.
 """
 
 # Python
-import logging
 import os
-import sys
 
 # GAE
 import webapp2
@@ -23,17 +21,13 @@ import source.utilities.jinjaTemplateRenderer as jtr
 	
 # Page Template
 pathToContent = os.path.join(rh.rootDir, 'html/content')
-contentFilename = 'home.html'
-contentTemplateValues = {
-    'photos': [
-    ]
-}
+contentFilename = 'notFound.html'
 pageTemplateValues = { 
     'page_title': 'Will Hauber',
-    'content_title': 'Home',
+    'content_title': '404 Error - Page Not Found',
 }
 
-class Home(webapp2.RequestHandler):
+class NotFound(webapp2.RequestHandler):
     def get(self):
         # Render the page
-        jtr.renderContentAndPage(self, pathToContent, contentFilename, contentTemplateValues, pageTemplateValues)
+        jtr.renderContentAndPage(self, pathToContent, contentFilename, {}, pageTemplateValues)

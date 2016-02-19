@@ -1,6 +1,6 @@
 ﻿/* CSS Defaults */
 a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -10,25 +10,31 @@ body {
 }
 
 html {
-    background: #ffffff;
-	color: #000000;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: repeating-linear-gradient(
+        135deg,
+        #202020,
+        #202020 5px,
+        #222222 5px,
+        #222222 10px
+    );
+	color: #ffffff;
+	font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 }
 
 input {    
     border: 1px solid #A9A9A9;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
     font-size: 1em;
     padding: 2px;
 }
-
+/*
 input:-webkit-autofill {
-    /* Makes autofill behave */
+    /* Makes autofill behave *
     -webkit-box-shadow: 0 0 0 50px #c0c0e0 inset;
 }
 
 input:-webkit-autofill:focus {
-    /* Makes autofill behave */
+    /* Makes autofill behave *
     -webkit-box-shadow: 0 0 0 50px #c0c0e0 inset;
 } 
 
@@ -36,6 +42,7 @@ textarea {
     border: 1px solid #A9A9A9;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 1em;
-    min-height: 57px; /* 3 lines */
+    min-height: 57px; /* 3 lines *
     padding: 2px;
 }
+*/

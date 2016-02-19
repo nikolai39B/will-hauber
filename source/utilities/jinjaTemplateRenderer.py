@@ -66,24 +66,11 @@ def getRenderedPage(handler, templateValues):
     # Get an environment for the html blocks
     jinjaEnv = getJinjaEnv(os.path.join(rh.rootDir, 'html/templates'))
 
-    """
-    # Get the current user
-    currentUser = uau.getLoggedInUser(handler)
-
     # Render the buttons_top
-    tv = {
-        'user': 'Guest',
-        'logged_in': False
-    }
-    if currentUser != None:
-        tv['user'] = '%s %s' % (currentUser.firstName, currentUser.lastName)
-        tv['logged_in'] = True
-    
-    templateValues['buttons_top'] = getRenderedTemplateWithEnvironment(jinjaEnv, 'buttons_top.html', tv)
-        
+    templateValues['buttons_top'] = getRenderedTemplateWithEnvironment(jinjaEnv, 'buttons_top.html')
+
     # Render the buttons_side
     templateValues['buttons_side'] = getRenderedTemplateWithEnvironment(jinjaEnv, 'buttons_side.html')
-    """
 
     # Render page_base.html
     return getRenderedTemplateWithEnvironment(jinjaEnv, 'page_base.html', templateValues)

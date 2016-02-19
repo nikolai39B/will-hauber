@@ -21,12 +21,13 @@ import webapp2
 rootDir = os.path.dirname(__file__) # Be sure to do this before the below imports
 
 from source.pages import home
+from source.pages import notFound
 
 #------#
 # Data #
 #------#
 app = webapp2.WSGIApplication([ 
-    ('/', home.Home)#,
+    ('/', home.Home),
 
-    #('/.*', notFound.NotFound)
+    ('/.*', notFound.NotFound)
 ], debug=True)
