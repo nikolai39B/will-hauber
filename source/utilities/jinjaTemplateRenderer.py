@@ -30,8 +30,8 @@ def renderContentAndPage(handler, pathToContent, contentFilename, contentTemplat
     Renders the content and page with their respective template values, then writes the
     page using the handler. The contentTemplateValues dictionary contains the template values for the
     page's content, and the pageTemplateValues dictionary contains the additional template values for
-    page_base.html. The pageTemplateValues dictionary should contain 'page_title', 'content_title', and
-    optionally 'scripts and 'stylesheets'.
+    page_base.html. The pageTemplateValues dictionary should contain 'page_title', 'content_title', 
+    'buttons_side', and optionally 'scripts and 'stylesheets'.
 
     handler: the current page handler
     pathToContent: the path to the content template
@@ -70,7 +70,7 @@ def getRenderedPage(handler, templateValues):
     templateValues['buttons_top'] = getRenderedTemplateWithEnvironment(jinjaEnv, 'buttons_top.html')
 
     # Render the buttons_side
-    templateValues['buttons_side'] = getRenderedTemplateWithEnvironment(jinjaEnv, 'buttons_side.html')
+    #templateValues['buttons_side'] = getRenderedTemplateWithEnvironment(jinjaEnv, 'buttons_side.html')
 
     # Render page_base.html
     return getRenderedTemplateWithEnvironment(jinjaEnv, 'page_base.html', templateValues)

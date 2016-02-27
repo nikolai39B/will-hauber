@@ -1,6 +1,6 @@
 ﻿<!--
 Requires:
-    buttons_side (html string)
+    buttons_side (list of tuples of strings)
     buttons_top (html string)
     content (html string)
     content_title (string)
@@ -58,7 +58,12 @@ Ids:
         <div class="header3">{{ content_title }}</div>
 
         <!-- Side Buttons -->
-        {{ buttons_side | safe }}
+        <div class="d_buttons_side">
+            <!-- Buttons -->
+            {% for button in buttons_side %}
+                <a class="button a_button_side" href="/{{ button[0] }}">{{ button[1] }}</a>
+            {% endfor %}
+        </div>
 
         <!-- Content -->
         <div class="d_page_content" id="d_page_content_container">

@@ -23,8 +23,11 @@ import source.utilities.jinjaTemplateRenderer as jtr
 pathToContent = os.path.join(rh.rootDir, 'html/content')
 contentFilename = 'notFound.html'
 pageTemplateValues = { 
-    'page_title': 'Will Hauber',
+    'buttons_side': [
+        ('', 'Home')
+    ],
     'content_title': '404 Error - Page Not Found',
+    'page_title': 'Will Hauber',
 }
 
 class NotFound(webapp2.RequestHandler):

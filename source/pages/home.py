@@ -25,12 +25,15 @@ import source.utilities.jinjaTemplateRenderer as jtr
 pathToContent = os.path.join(rh.rootDir, 'html/content')
 contentFilename = 'home.html'
 contentTemplateValues = {
-    'photos': [
-    ]
 }
 pageTemplateValues = { 
-    'page_title': 'Will Hauber',
+    'buttons_side': [
+        ('', 'Home'),
+        ('contact_me', 'Contact Me'),
+        ('resume', 'Resume')
+    ],
     'content_title': 'Home',
+    'page_title': 'Will Hauber'
 }
 
 class Home(webapp2.RequestHandler):
